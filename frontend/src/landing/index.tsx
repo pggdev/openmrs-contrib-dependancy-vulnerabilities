@@ -1,5 +1,5 @@
 import { Container } from "../components/container"
-import { ModuleCard } from "../components/modulecard"
+import { ModuleCard } from "../components/dropdowncards/firstlayer/modulecard"
 
 export const Landing = () => {
     return <div className="flex justify-center">
