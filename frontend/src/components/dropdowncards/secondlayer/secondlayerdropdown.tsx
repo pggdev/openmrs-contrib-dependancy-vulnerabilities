@@ -67,6 +67,12 @@ export const Secondlayerdropdown = () => {
     const [Rows] = useState(Vulnerability)
     const [openRowIndex, setOpenRowIndex] = useState<number | null>(null)
 
+    const toggleRow = (index: number) => {
+
+        setOpenRowIndex(openRowIndex === index ? null : index)
+
+    }
+
 
 
 
@@ -102,7 +108,7 @@ export const Secondlayerdropdown = () => {
             <div className="grid grid-cols-6 py-4 border-b border-neutral-200" >
                 <div className="px-4 flex gap-4 items-center">
 
-                    <button>
+                    <button onClick={() => toggleRow(index)}>
                         <IconChevronDown
                             className={cn(
                                 "size-4 text-gray-500 transition-transform",
